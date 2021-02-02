@@ -2,7 +2,7 @@
  * @Author: tangdaoyong
  * @Date: 2021-02-01 15:36:56
  * @LastEditors: tangdaoyong
- * @LastEditTime: 2021-02-01 16:02:30
+ * @LastEditTime: 2021-02-01 18:04:19
  * @Description: Golang安装
 -->
 # Golang安装
@@ -113,7 +113,7 @@ brew install go@1.13
 ```
 go version
 
-go version go1.13.6 darwin/amd64
+go version go1.15.7 darwin/amd64
 ```
 
 ### 从源码安装
