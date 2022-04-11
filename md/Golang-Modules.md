@@ -1,8 +1,8 @@
 <!--
  * @Author: tangdaoyong
  * @Date: 2021-02-02 09:29:42
- * @LastEditors: tangdaoyong
- * @LastEditTime: 2021-02-02 09:53:41
+ * @LastEditors: matiastang
+ * @LastEditTime: 2022-04-08 19:32:39
  * @Description: Modules
 -->
 # Modules
@@ -26,3 +26,8 @@ import "testmodule/foo"复制代码为了得出这个结论，专门做了个试
 最后，不得不说的是：使用相对导入的方式，项目可读性会大打折扣，不利用开发者理清整个引用关系。
 
 所以一般更推荐使用绝对引用的方式。使用绝对引用的话，又要谈及优先级了
+
+* 生成`go.mod`文件
+```
+$ go mod init
+```
