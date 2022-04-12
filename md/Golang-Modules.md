@@ -2,7 +2,7 @@
  * @Author: tangdaoyong
  * @Date: 2021-02-02 09:29:42
  * @LastEditors: matiastang
- * @LastEditTime: 2022-04-08 19:32:39
+ * @LastEditTime: 2022-04-12 19:47:14
  * @Description: Modules
 -->
 # Modules
@@ -30,4 +30,17 @@ import "testmodule/foo"复制代码为了得出这个结论，专门做了个试
 * 生成`go.mod`文件
 ```
 $ go mod init
+```
+```c
+go: cannot determine module path for source directory /Users/matias/matias/MT/MTGithub/matias-Golang/src/learn (outside GOPATH, module path must be specified)
+
+Example usage:
+        'go mod init example.com/m' to initialize a v0 or v1 module
+        'go mod init example.com/m/v2' to initialize a v2 module
+
+Run 'go help mod init' for more information.
+```
+`go mod init`的时候需要指定一个`module name`。
+```
+$ go mod init learn
 ```
