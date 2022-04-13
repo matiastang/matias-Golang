@@ -2,11 +2,11 @@
  * @Author: matiastang
  * @Date: 2022-04-12 19:50:14
  * @LastEditors: matiastang
- * @LastEditTime: 2022-04-12 20:00:49
- * @FilePath: /matias-Golang/src/learn/slice.go
- * @Description: slice切片
+ * @LastEditTime: 2022-04-13 14:03:52
+ * @FilePath: /matias-Golang/learn/src/test/data/end.go
+ * @Description: slice 切片
  */
-package slice
+package data
 
 /*
 切片(slice)本身不是动态数组或动态指针。只是它内部采用数组存储数据，当数组长度达到数组容量时，会进行动态扩容。
@@ -15,7 +15,11 @@ package slice
 
 import "fmt"
 
-func test() {
+func init() {
+	fmt.Println("slice init")
+}
+
+func SliceTest() {
 	// slice初始化方式一
 	a := make([]int, 5)
 	fmt.Println(a)
