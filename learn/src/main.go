@@ -2,7 +2,7 @@
  * @Author: matiastang
  * @Date: 2022-04-12 19:40:03
  * @LastEditors: matiastang
- * @LastEditTime: 2022-04-13 15:12:59
+ * @LastEditTime: 2022-04-13 19:22:21
  * @FilePath: /matias-Golang/learn/src/main.go
  * @Description: main
  */
@@ -20,4 +20,6 @@ func init() {
 func main() {
 	fmt.Println("learn main main")
 	test.SliceTest()
+	test.ArrayTest()
+	test.MapTest()
 }
