@@ -2,11 +2,13 @@
  * @Author: matiastang
  * @Date: 2022-04-18 15:45:34
  * @LastEditors: matiastang
- * @LastEditTime: 2022-04-18 15:49:55
+ * @LastEditTime: 2022-04-18 17:29:56
  * @FilePath: /matias-Golang/md/框架/Gin/Gin.md
  * @Description: Gin
 -->
 # Gin
+
+[Go Gin 入门教程](https://zhuanlan.zhihu.com/p/375688504)
 
 ## 介绍
 
@@ -32,3 +34,12 @@ go get -u -v github.com/gin-gonic/gin
 ```
 -v：打印出被构建的代码包的名字
 -u：已存在相关的代码包，强行更新代码包及其依赖包
+
+## 使用
+
+```
+# go.mod添加require github.com/gin-gonic/gin v1.7.7
+go mod edit -require github.com/gin-gonic/gin@latest
+# 更新依赖（生成go.sum）
+go mod tidy
+```
