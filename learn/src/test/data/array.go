@@ -2,11 +2,11 @@
  * @Author: matiastang
  * @Date: 2022-04-13 16:53:33
  * @LastEditors: matiastang
- * @LastEditTime: 2022-04-13 16:55:23
+ * @LastEditTime: 2022-04-20 10:20:43
  * @FilePath: /matias-Golang/learn/src/test/data/array.go
  * @Description: array数组
  */
-package data
+package main
 
 import "fmt"
 
@@ -15,6 +15,9 @@ func init() {
 }
 
 func ArrayTest() {
+	var arr []interface{}
+	fmt.Println(arr)
+
 	var arr1 [4]int   // 元素自动初始化为零
 	fmt.Println(arr1) // [0 0 0 0]
 
@@ -29,4 +32,8 @@ func ArrayTest() {
 
 	t := len(arr4) // 内置函数len(数组名称)表示数组的长度
 	fmt.Println(t) // 3
+}
+
+func main() {
+	ArrayTest()
 }
