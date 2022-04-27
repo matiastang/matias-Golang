@@ -2,7 +2,7 @@
  * @Author: matiastang
  * @Date: 2022-04-12 19:40:03
  * @LastEditors: matiastang
- * @LastEditTime: 2022-04-24 15:42:53
+ * @LastEditTime: 2022-04-27 13:51:11
  * @FilePath: /matias-Golang/learn/src/main.go
  * @Description: main
  */
@@ -10,10 +10,8 @@ package main
 
 import (
 	"fmt"
-	// "learn/app/get"
-	// "learn/routers"
-	// test "learn/test/data"
-	"learn/app/painkiller"
+	"learn/app/get"
+	"learn/routers"
 )
 
 func init() {
@@ -23,16 +21,16 @@ func init() {
 //go:generate go run main.go
 //go:generate go version
 func main() {
-	pk1 := painkiller.Aspirin
-	fmt.Println(pk1)
+	// pk1 := painkiller.Aspirin
+	// fmt.Println(pk1)
 	fmt.Println("learn main main")
-	// // 加载多个APP的路由配置
-	// routers.Include(get.Routers)
-	// // 初始化路由
-	// r := routers.Init()
-	// if err := r.Run(); err != nil {
-	// 	//...
-	// }
+	// 加载多个APP的路由配置
+	routers.Include(get.Routers)
+	// 初始化路由
+	r := routers.Init()
+	if err := r.Run(); err != nil {
+		//...
+	}
 
 	// r := gin.Default()
 	// r.GET("/", func(c *gin.Context) {
