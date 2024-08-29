@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-09-17 10:17:54
- * @LastEditTime: 2022-04-13 16:29:10
+ * @LastEditTime: 2024-08-29 15:13:59
  * @LastEditors: matiastang
  * @Description: In User Settings Edit
  * @FilePath: /matias-Golang/md/Go多版本管理.md
@@ -72,4 +72,19 @@ $ which go
 卸载 `brew` 版本的`go`：
 ```
 $ brew uninstall go
+```
+
+* 当前版本`go1.17.1`时，去下载`gvm install go1.23.0`提示：
+```sh
+Building Go cmd/dist using /Users/matias/.gvm/gos/go1.17.1. (go1.17.1 darwin/arm64)
+found packages main (build.go) and building_Go_requires_Go_1_20_6_or_later (notgo120.go) in /Users/matias/.gvm/gos/go1.23.0/src/cmd/dist
+```
+需要先升级到`go1.20.6`版本以上。
+```sh
+gvm install go1.18.10
+gvm install go1.19.13
+gvm install go1.20.14
+gvm install go1.21.13
+gvm install go1.22.6
+gvm install go1.23.0
 ```
