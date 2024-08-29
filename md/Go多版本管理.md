@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-09-17 10:17:54
- * @LastEditTime: 2024-08-29 15:13:59
+ * @LastEditTime: 2024-08-29 15:54:48
  * @LastEditors: matiastang
  * @Description: In User Settings Edit
  * @FilePath: /matias-Golang/md/Go多版本管理.md
@@ -87,4 +87,8 @@ gvm install go1.20.14
 gvm install go1.21.13
 gvm install go1.22.6
 gvm install go1.23.0
+```
+设置默认使用的`go`版本：
+```
+$ gvm use go1.23.0 --default
 ```
