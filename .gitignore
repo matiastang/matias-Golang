@@ -1,3 +1,4 @@
 .history
 pkg
 .DS_Store
+*.o
